@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://tysongach.netlify.app/*"
+  to = "https://www.tysongach.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://tysongach.netlify.com/*"
+  to = "https://www.tysongach.com/:splat"
+  status = 301
+  force = true
