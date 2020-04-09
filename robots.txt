@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://tysongach.com/sitemap.xml
+Sitemap: https://www.tysongach.com/sitemap.xml
