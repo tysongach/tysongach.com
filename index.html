@@ -21,6 +21,7 @@
     }
 
     img {
+      height: auto;
       max-width: 100%;
     }
 
@@ -96,34 +97,25 @@
     }
 
     .headshot-wrapper {
-      border-radius: 6.25em;
-      display: block;
-      line-height: 0;
-      margin: 0 auto 2em;
-      position: relative;
-      width: 6.25em;
-    }
-
-    .headshot-wrapper:after {
-      border: 1px solid rgba(0, 0, 0, 0.15);
-      border-radius: 6.25em;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      content: "";
-      position: absolute;
-      z-index: 100;
+      margin-left: auto;
+      margin-right: auto;
+      width: 6.25rem;
     }
 
     .headshot {
-      border-radius: 6.25em;
+      border-radius: 6.25rem;
+      height: 6.25rem;
+      width: 6.25rem;
     }
   </style>
 </head>
 <body>
   <div class="headshot-wrapper">
-    <img class="headshot" src="tyson-gach.jpg" alt="Tyson Gach">
+    <picture>
+      <source class="headshot" srcset="tyson-gach.webp" type="image/webp">
+      <source class="headshot" srcset="tyson-gach.jpg" type="image/jpeg">
+      <img class="headshot" src="tyson-gach.jpg" alt="Tyson Gach" width="200" height="200">
+    </picture>
   </div>
   <h1 class="tagline">
     Tyson Gach is a product designer, front-end developer, and accessibility advocate.
