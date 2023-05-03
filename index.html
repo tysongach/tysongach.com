@@ -59,30 +59,21 @@
     }
 
     .links {
+      display: flex;
       font-size: 0.9375em;
+      justify-content: center;
       list-style-type: none;
       padding-left: 0;
-      text-align: center;
     }
 
     .links li {
-      display: inline-block;
-      margin: 0 0.1875em 0 0;
+      display: inline-flex;
     }
 
-    .links li::after {
+    .links li + li::before {
       color: rgb(180, 180, 180);
       content: "·";
-      padding-left: 0.375em;
-    }
-
-    .links li:last-child {
-      margin: 0;
-    }
-
-    .links li:last-child::after {
-      content: "";
-      padding-left: 0;
+      padding-inline: 0.375em;
     }
 
     .headshot-wrapper {
